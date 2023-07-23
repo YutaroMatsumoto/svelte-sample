@@ -12,7 +12,7 @@
 	</p>
 
 	<div class="example">
-		<span class="close">r</span>
+		<span class="close">ra</span>
 		<span class="missing">i</span>
 		<span class="close">t</span>
 		<span class="missing">z</span>
