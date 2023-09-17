@@ -1,17 +1,14 @@
 <script lang="ts">
-	import { count, getCountStore } from '../store';
+	import { count } from '../store';
 
-	function updateCount(event: WheelEvent) {
-		event.deltaY < 0 ? count.set(($countStore += 1)) : ($countStore -= 1);
+	function updateCount() {
+		count.set(($count += 1));
 	}
-
-	const countStore = getCountStore();
-
-	$: console.log('grand:', $count);
 </script>
 
-<div on:wheel={updateCount} class="container">
+<button on:click={updateCount} class="container"> button </button>
+<div class="container">
 	<!-- <div class="container"> -->
-	<p>Grandparent: {$countStore}</p>
+	<p>Grandparent: {$count}</p>
 	<slot />
 </div>

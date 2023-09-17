@@ -8,5 +8,3 @@ export function setCount() {
 export function getCount() {
 	return getContext<number>('count');
 }
-
-// ============================

@@ -2,7 +2,7 @@
 	import Child from '$lib/components/context/child.svelte';
 	import Grandparent from '$lib/components/context/grandparent.svelte';
 	import Parent from '$lib/components/context/parent.svelte';
-	import { setCount, getCount } from '$lib/components/context';
+	import { getCount } from '$lib/components/context';
 
 	// let count = 0;
 	// function updateCount(event: WheelEvent) {
@@ -23,7 +23,9 @@
 	</Parent>
 </Grandparent>
 <!-- </div> -->
-========================
+
+<p>========================</p>
+
 <Grandparent>
 	<Parent>
 		<Child />

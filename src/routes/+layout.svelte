@@ -5,6 +5,14 @@
 
 <div class="app">
 	<main>
-		<slot />
+		<div class="container">
+			<slot />
+		</div>
 	</main>
 </div>
+
+<style>
+	.container {
+		padding: 20px;
+	}
+</style>
